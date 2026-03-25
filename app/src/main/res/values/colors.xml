@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bosse_bg">#FF0D1117</color>
+    <color name="bosse_primary">#FFE50914</color>
+    <color name="bosse_banner_bg">#FF1a237e</color>
+    <color name="bosse_card_focus">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" role="img" aria-labelledby="title desc">
+  <title id="title">Bosse</title>
+  <desc id="desc">Local OTT-style library for Android TV; offline playback from your storage</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117">
+        <animate attributeName="stop-color" values="#0D1117;#121a3a;#0D1117" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#1a237e">
+        <animate attributeName="stop-color" values="#1a237e;#0f1f4d;#1a237e" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117">
+        <animate attributeName="stop-color" values="#0D1117;#1a1f3d;#0D1117" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-400 0" to="400 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="260" rx="28" fill="url(#sky)"/>
+  <rect width="920" height="260" rx="28" fill="url(#shine)"/>
+  <circle cx="780" cy="50" r="3" fill="#E50914" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="200" r="4" fill="#7F5AF0" opacity="0.4">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="210" r="2" fill="#E50914" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(118, 78)" filter="url(#glow)">
+    <polygon points="62,0 124,62 62,124 0,62" fill="#E50914">
+      <animate attributeName="opacity" values="0.92;1;0.92" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <text x="268" y="118" fill="#F0F3F6" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">Bosse</text>
+  <text x="270" y="158" fill="#8B9DC3" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="500">Your library. Your TV. No stream required.</text>
+  <text x="270" y="192" fill="#5C6B8A" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14">USB / SSD / HDD / SD / NAS</text>
+</svg>
