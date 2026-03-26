@@ -1,10 +1,13 @@
 package dev.olufsen.bosse.ui.detail
 
 import android.app.Activity
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -19,10 +22,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.tv.foundation.ExperimentalTvFoundationApi
-import androidx.tv.foundation.PivotOffsets
-import androidx.tv.foundation.lazy.list.TvLazyColumn
-import androidx.tv.foundation.lazy.list.items
 import androidx.tv.material3.Button
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.Text
@@ -35,7 +34,7 @@ import dev.olufsen.bosse.ui.LocalBosseApp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-@OptIn(ExperimentalTvMaterial3Api::class, ExperimentalTvFoundationApi::class)
+@OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun SeriesDetailScreen(seriesId: Long, onBack: () -> Unit) {
     val app = LocalBosseApp.current
@@ -73,9 +72,8 @@ fun SeriesDetailScreen(seriesId: Long, onBack: () -> Unit) {
         Text(text = s.title, modifier = Modifier.padding(bottom = 8.dp))
         s.overview?.let { Text(text = it, modifier = Modifier.padding(bottom = 16.dp)) }
 
-        TvLazyColumn(
-            verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp),
-            pivotOffsets = PivotOffsets(parentFraction = 0.1f),
+        LazyColumn(
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             items(episodes, key = { it.id }) { ep ->
                 EpisodeRow(

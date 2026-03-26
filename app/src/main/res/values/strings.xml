@@ -6,15 +6,24 @@
     <string name="movies">Movies</string>
     <string name="series">Series</string>
     <string name="settings">Settings</string>
-    <string name="pick_library_folder">Choose library folder</string>
+    <string name="pick_library_folder">Choose Library Folder</string>
     <string name="play">Play</string>
     <string name="resume">Resume</string>
     <string name="updating_library">Updating library…</string>
-    <string name="no_library_yet">Choose your video folder to get started</string>
     <string name="refresh_library">Refresh library</string>
     <string name="tmdb_api_key">TMDB API key (optional)</string>
     <string name="save">Save</string>
     <string name="next_episode">Next episode</string>
     <string name="subtitles">Subtitles</string>
     <string name="none">None</string>
+    <string name="empty_state_watermark">BOSSE</string>
+    <string name="empty_state_title">Your Cinema Awaits.</string>
+    <string name="empty_state_subtitle">To get started, point Bosse to your media collection.</string>
+    <string name="empty_state_tmdb_cta">Add TMDB API Key (Optional)</string>
+    <string name="empty_state_feature_meta_title">Automatic Metadata</string>
+    <string name="empty_state_feature_meta_body">Bosse identifies and organizes your posters, trailers, and cast info.</string>
+    <string name="empty_state_feature_4k_title">4K Ready</string>
+    <string name="empty_state_feature_4k_body">Optimized performance for high-bitrate playback and large libraries.</string>
+    <string name="empty_state_feature_devices_title">Multi-Device</string>
+    <string name="empty_state_feature_devices_body">Stream your library to any screen in your private network effortlessly.</string>
 </resources>
